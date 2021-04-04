@@ -12,8 +12,8 @@ sudo apt install -y gcc g++ python make texinfo texlive bc bison build-essential
     unzip language-pack-zh-hans
 # GCC Cross
 wget "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android10-qpr1-b-release.tar.gz"
-xz -d android10-qpr1-b-release.tar.gz
-tar xf android10-qpr1-b-release.tar.gz
+gz -d android10-qpr1-b-release.tar.gz
+tar xf android10-qpr1-b-release.tar
 mv android10-qpr1-b-release .gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu
 # Env
 export ARCH=arm64
