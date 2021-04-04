@@ -15,7 +15,7 @@ jobs:
     - name: Build With Shell
       run: |
         cd ~/marlin
-        bash build.sh
+        sudo bash build.sh
     - name: Package With AnyKernel
       run: |
         cd ~
