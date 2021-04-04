@@ -11,7 +11,7 @@ jobs:
     - name: Init Repo
       run: |
         cd ~
-        git https://github.com/pvapor/marlin.git --depth=1 
+        git clone https://github.com/pvapor/marlin.git --depth=1 
     - name: Build With Shell
       run: |
         cd ~/marlin
