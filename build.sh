@@ -22,6 +22,7 @@ export CROSS_COMPILE=aarch64-linux-android-
 
 # CMP
 git clone https://github.com/pvapor/marlin.git
+chmod -R 777 marlin
 cd marlin
 make clean 
 make mrproper 
