@@ -12,13 +12,15 @@ sudo apt install -y gcc g++ python make texinfo texlive bc bison build-essential
     unzip language-pack-zh-hans build-essential libncurses5-dev
 # GCC Cross
 wget "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android10-qpr1-b-release.tar.gz"
-gzip -d  android10-qpr1-b-release.tar.gz
-tar xf android10-qpr1-b-release.tar
+wget "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/heads/android10-qpr1-release.tar.gz"
+gzip -d  android10-qpr1-b-release.tar.gz android10-qpr1-release.tar.gz
+tar xf android10-qpr1-b-release.tar android10-qpr1-release.tar
 # Env
 export ARCH=arm64
 export SUBARCH=arm64
 export PATH=~/bin:$PATH
 export CROSS_COMPILE=aarch64-linux-android-
+export CROSS_COMPILE_ARM32=arm-linux-gnueabi- 
 
 # CMP
 git clone https://github.com/pvapor/marlin.git
