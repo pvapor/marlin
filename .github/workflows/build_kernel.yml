@@ -1,0 +1,29 @@
+name: Build Kernel
+on:
+  push:
+    branches:    
+      - ElementalX
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Init Repo
+      run: |
+        cd ~
+        git https://github.com/pvapor/marlin.git --depth=1 
+    - name: Build With Shell
+      run: |
+        cd ~/marlin
+        bash build.sh
+    - name: Package With AnyKernel
+      run: |
+        cd ~
+        cp marlin/AnyKernel ./ -r
+        cd AnyKernel/
+        cp ../marlin/out/arch/arm64/boot/Image.gz-dtb  ./
+    - name : Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: blu_spark_makiras_modified.zip
+        path: /home/runner/AnyKernel/
