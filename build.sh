@@ -14,7 +14,6 @@ sudo apt install -y gcc g++ python make texinfo texlive bc bison build-essential
 wget "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android10-qpr1-b-release.tar.gz"
 gzip -d  android10-qpr1-b-release.tar.gz
 tar xf android10-qpr1-b-release.tar
-mv repo.prop COPYING COPYING.LIB COPYING.RUNTIME  COPYING3 COPYING3.LIB MODULE_LICENSE_GPL NOTICE OWNERS  lib libexec aarch64-linux-android bin .repo.prop COPYING COPYING.LIB COPYING.RUNTIME  COPYING3 COPYING3.LIB MODULE_LICENSE_GPL NOTICE OWNERS  lib libexec aarch64-linux-android bin
 # Env
 export ARCH=arm64
 export SUBARCH=arm64
