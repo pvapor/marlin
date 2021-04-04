@@ -18,7 +18,7 @@ mv repo.prop COPYING COPYING.LIB COPYING.RUNTIME  COPYING3 COPYING3.LIB MODULE_L
 # Env
 export ARCH=arm64
 export SUBARCH=arm64
-export PATH=~/./bin:$PATH
+export PATH=~/bin:$PATH
 export CROSS_COMPILE=aarch64-linux-android-
 
 # CMP
