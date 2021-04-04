@@ -20,8 +20,9 @@ tar xf   android10-qpr1-release.tar
 # Env
 export ARCH=arm64
 export SUBARCH=arm64
-export CROSS_COMPILE=./bin/aarch64-linux-android-
-export CROSS_COMPILE_ARM32=./bin/arm-linux-gnueabi- 
+export PATH=~/bin:$PATH
+export CROSS_COMPILE=aarch64-linux-android-
+export CROSS_COMPILE_ARM32=arm-linux-gnueabi- 
 
 # CMP
 git clone https://github.com/pvapor/marlin.git
