@@ -25,5 +25,5 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: blu_spark_makiras_modified.zip
+        name: marlin.zip
         path: /home/runner/AnyKernel/
