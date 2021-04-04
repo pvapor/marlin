@@ -22,7 +22,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export PATH=~/bin:$PATH
 export CROSS_COMPILE=aarch64-linux-android-
-export CROSS_COMPILE_ARM32=arm-linux-gnueabi- 
+export CROSS_COMPILE_COMPAT=arm-linux-gnueabi-
 
 # CMP
 git clone https://github.com/pvapor/marlin.git
