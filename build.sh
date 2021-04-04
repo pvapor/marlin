@@ -11,15 +11,9 @@ sudo apt install -y gcc g++ python make texinfo texlive bc bison build-essential
     libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev \
     unzip language-pack-zh-hans
 # GCC Cross
-wget "https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz"
-xz -d gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
-tar xf gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar
-mv gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu .gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu
-# Env
-export ARCH=arm64
-export SUBARCH=arm64
-export PATH=~/.gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin:$PATH
-export CROSS_COMPILE=aarch64-none-linux-gnu-
+wget "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android10-qpr1-b-release.tar.gz"
+gzip -d  android10-qpr1-b-release.tar.gz
+tar xf android10-qpr1-b-release.tar
 # Env
 export ARCH=arm64
 export SUBARCH=arm64
